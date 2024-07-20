@@ -1,1 +1,109 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .header, .section {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .section-title {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .job, .education {
+            margin-bottom: 20px;
+        }
+        .job-title, .degree {
+            font-weight: bold;
+        }
+        .company, .institution {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>John Doe</h1>
+            <div class="contact-info">
+                <p>Email: john.doe@example.com | Phone: (123) 456-7890</p>
+                <p>LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title"><h2>Summary</h2></div>
+            <p>Experienced software developer with a strong background in developing scalable web applications. Proficient in various programming languages and frameworks with a passion for learning new technologies.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title"><h2>Experience</h2></div>
+            <div class="job">
+                <p class="job-title">Senior Software Developer</p>
+                <p class="company">Tech Company Inc. | Jan 2020 - Present</p>
+                <ul>
+                    <li>Developed and maintained web applications using React and Node.js.</li>
+                    <li>Led a team of 5 developers to deliver projects on time and within budget.</li>
+                    <li>Implemented CI/CD pipelines to streamline the deployment process.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <p class="job-title">Software Developer</p>
+                <p class="company">Web Solutions LLC | May 2017 - Dec 2019</p>
+                <ul>
+                    <li>Designed and implemented RESTful APIs using Python and Flask.</li>
+                    <li>Collaborated with cross-functional teams to define and achieve project goals.</li>
+                    <li>Optimized database queries, reducing load times by 20%.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title"><h2>Education</h2></div>
+            <div class="education">
+                <p class="degree">Bachelor of Science in Computer Science</p>
+                <p class="institution">University of Somewhere | Graduated: 2017</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title"><h2>Skills</h2></div>
+            <ul>
+                <li>Programming Languages: JavaScript, Python, Java</li>
+                <li>Frameworks: React, Node.js, Flask</li>
+                <li>Tools: Git, Docker, Jenkins</li>
+                <li>Databases: MySQL, MongoDB</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
