@@ -6,11 +6,12 @@
     <title>John Doe's Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .container {
             width: 80%;
@@ -20,6 +21,7 @@
             background: #fff;
             margin-top: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         h1, h2 {
             color: #333;
@@ -38,15 +40,31 @@
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
             margin-bottom: 10px;
+            text-transform: uppercase;
         }
-        .job, .education {
+        .job, .education, .project, .certification, .hobby {
             margin-bottom: 20px;
         }
-        .job-title, .degree {
+        .job-title, .degree, .project-title, .certification-title, .hobby-title {
             font-weight: bold;
+            font-size: 1.1em;
         }
-        .company, .institution {
+        .company, .institution, .organization {
             color: #666;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .skills ul, .projects ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills li, .projects li {
+            margin-right: 15px;
+            list-style-type: disc;
+        }
+        .skills li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -56,7 +74,7 @@
             <h1>John Doe</h1>
             <div class="contact-info">
                 <p>Email: john.doe@example.com | Phone: (123) 456-7890</p>
-                <p>LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe</p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a> | GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
             </div>
         </div>
 
@@ -74,6 +92,7 @@
                     <li>Developed and maintained web applications using React and Node.js.</li>
                     <li>Led a team of 5 developers to deliver projects on time and within budget.</li>
                     <li>Implemented CI/CD pipelines to streamline the deployment process.</li>
+                    <li>Conducted code reviews and mentored junior developers.</li>
                 </ul>
             </div>
             <div class="job">
@@ -83,6 +102,27 @@
                     <li>Designed and implemented RESTful APIs using Python and Flask.</li>
                     <li>Collaborated with cross-functional teams to define and achieve project goals.</li>
                     <li>Optimized database queries, reducing load times by 20%.</li>
+                    <li>Wrote unit and integration tests to ensure code quality.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title"><h2>Projects</h2></div>
+            <div class="project">
+                <p class="project-title">Project Management Tool</p>
+                <p class="organization">Personal Project | 2021</p>
+                <ul>
+                    <li>Developed a project management tool using React, Node.js, and MongoDB.</li>
+                    <li>Features include task assignments, deadlines, and real-time collaboration.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <p class="project-title">E-commerce Website</p>
+                <p class="organization">Freelance | 2020</p>
+                <ul>
+                    <li>Built a fully functional e-commerce website with payment integration using Django and Stripe.</li>
+                    <li>Implemented responsive design to ensure compatibility across devices.</li>
                 </ul>
             </div>
         </div>
@@ -96,13 +136,38 @@
         </div>
 
         <div class="section">
+            <div class="section-title"><h2>Certifications</h2></div>
+            <div class="certification">
+                <p class="certification-title">Certified Kubernetes Administrator (CKA)</p>
+                <p class="organization">The Linux Foundation | 2022</p>
+            </div>
+            <div class="certification">
+                <p class="certification-title">AWS Certified Solutions Architect – Associate</p>
+                <p class="organization">Amazon Web Services | 2021</p>
+            </div>
+        </div>
+
+        <div class="section">
             <div class="section-title"><h2>Skills</h2></div>
             <ul>
                 <li>Programming Languages: JavaScript, Python, Java</li>
-                <li>Frameworks: React, Node.js, Flask</li>
-                <li>Tools: Git, Docker, Jenkins</li>
-                <li>Databases: MySQL, MongoDB</li>
+                <li>Frameworks: React, Node.js, Flask, Django</li>
+                <li>Tools: Git, Docker, Jenkins, Kubernetes</li>
+                <li>Databases: MySQL, MongoDB, PostgreSQL</li>
+                <li>Cloud: AWS, Azure</li>
             </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title"><h2>Hobbies</h2></div>
+            <div class="hobby">
+                <p class="hobby-title">Photography</p>
+                <p>Enjoy capturing landscapes and nature scenes during travels.</p>
+            </div>
+            <div class="hobby">
+                <p class="hobby-title">Cycling</p>
+                <p>Regularly participate in local cycling events and long-distance rides.</p>
+            </div>
         </div>
     </div>
 </body>
